@@ -16,8 +16,19 @@ $(document).ready(function(){
 
     $('a').smoothScroll();
 
-    $(".needsCell").click(function(){
-        let needsTextVar = $(".needsCell").val();
+    $(".needsCellOne").click(function(){
+        let needsTextVar = $(".needsCellOne").val();
+        $("#littleSomething").removeClass("hidden");
+        $(".needsText").text(needsTextVar);
+    });
+    $(".needsCellTwo").click(function(){
+        let needsTextVar = $(".needsCellTwo").val();
+        $("#littleSomething").removeClass("hidden");
+        $(".needsText").text(needsTextVar);
+    });
+    $(".needsCellThree").click(function(){
+        let needsTextVar = $(".needsCellThree").val();
+        $("#littleSomething").removeClass("hidden");
         $(".needsText").text(needsTextVar);
     });
 });
