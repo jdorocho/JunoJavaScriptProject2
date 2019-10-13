@@ -18,19 +18,19 @@ $(document).ready(function(){
 
     $(".needsCellOne").click(function(){
         let needsTextVar = $(".needsCellOne").val();
-        $("#littleSomething").removeClass("hidden");
+        $("#littleSomething").fadeIn(600);
         $(".needsText").text(needsTextVar);
         $(".needsCarousel").addClass("paused");
     });
     $(".needsCellTwo").click(function(){
         let needsTextVar = $(".needsCellTwo").val();
-        $("#littleSomething").removeClass("hidden");
+        $("#littleSomething").fadeIn();
         $(".needsText").text(needsTextVar);
         $(".needsCarousel").addClass("paused");
     });
     $(".needsCellThree").click(function(){
         let needsTextVar = $(".needsCellThree").val();
-        $("#littleSomething").removeClass("hidden");
+        $("#littleSomething").fadeIn();
         $(".needsText").text(needsTextVar);
         $(".needsCarousel").addClass("paused");
     });
