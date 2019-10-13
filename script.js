@@ -20,15 +20,22 @@ $(document).ready(function(){
         let needsTextVar = $(".needsCellOne").val();
         $("#littleSomething").removeClass("hidden");
         $(".needsText").text(needsTextVar);
+        $(".needsCarousel").addClass("paused");
     });
     $(".needsCellTwo").click(function(){
         let needsTextVar = $(".needsCellTwo").val();
         $("#littleSomething").removeClass("hidden");
         $(".needsText").text(needsTextVar);
+        $(".needsCarousel").addClass("paused");
     });
     $(".needsCellThree").click(function(){
         let needsTextVar = $(".needsCellThree").val();
         $("#littleSomething").removeClass("hidden");
         $(".needsText").text(needsTextVar);
+        $(".needsCarousel").addClass("paused");
     });
+});
+
+$('.clicker').click(function(){
+    $(this).next('.circle').toggleClass('paused');
 });

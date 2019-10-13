@@ -159,19 +159,64 @@ main {
     font-weight: 700; 
 }
 
+.needsCarousel {
+    box-shadow: 0px 0px 10px #aaa;
+    margin-top: 50px;
+    border-radius: 5px;
+    animation: pulse 2s infinite;
+}
+
+.paused {
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused; 
+    animation-play-state: paused;
+    box-shadow: 0px 0px 10px #aaa !important;
+}
+
+.needsCarousel:hover {
+    animation: none;
+}
+
+.needsCarousel input {
+    color: grey;
+    background-color: #fff;
+    font-size: 3.0rem; 
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    border-style: none;
+    width: 100%;
+    height: 100%; 
+    padding: 30px 0px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.needsCell:hover {
+    /* background-color: #aaa; */
+    background-image: radial-gradient(#777 5%, #aaa 95%);
+    color: #fff;
+    cursor: pointer;
+}
+
+.needsCell:hover input {
+    color: #fff;
+}
+
 .hidden {
     display: none;
 }
 
 .fillIn {
-    /* border: 1px solid grey; */
+    border: 1px solid #aaa;
+    border-radius: 5px; 
     width: 100%;
     padding: 50px;
     margin-top: 75px;
     color: grey;
     font-family: 'Raleway', sans-serif;
     text-align: center;
-    box-shadow: 0px 0px 10px #aaa;
+    /* box-shadow: 0px 0px 10px #aaa; */
 }
 
 .fillInContent {
@@ -190,41 +235,6 @@ main {
     font-size: 1.6rem;   
 }
 
-.needsCarousel {
-    margin-top: 50px;
-    transition-property: all;
-    transition-duration: 0.3s;
-}
-
-.needsCarousel input {
-    color: grey;
-    background-color: #fff;
-    font-size: 3.0rem; 
-    font-family: 'Raleway', sans-serif;
-    text-align: center;
-    border-style: none;
-    width: 100%;
-    height: 100%; 
-    padding: 30px 0px;
-    border-radius: 5px;
-}
-
-.needsCarousel:hover {
-    box-shadow: 0px 0px 10px #aaa;
-    border-radius: 5px;
-}
-
-.needsCell:hover {
-    /* background-color: #aaa; */
-    background-image: radial-gradient(#777 5%, #aaa 95%);
-    color: #fff;
-    cursor: pointer;
-}
-
-.needsCell:hover input {
-    color: #fff;
-}
-
 footer {
     /* background-color: #999; */
     background-image: radial-gradient(#777 5%, #aaa 95%);
@@ -238,5 +248,29 @@ footer p {
     margin: 0px;
 }
 
-
+@-webkit-keyframes pulse {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(170,170, 170, 0.4);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px rgba(204, 204,204, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(204, 204,204, 0);
+    }
+  }
+  @keyframes pulse {
+    0% {
+      -moz-box-shadow: 0 0 0 0 rgba(50, 50, 50, 0.4);
+      box-shadow: 0 0 0 0 rgba(50, 50, 50, 0.4);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(170, 170, 170, 0);
+        box-shadow: 0 0 0 10px rgba(170, 170, 170, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(204, 204,204, 0);
+        box-shadow: 0 0 0 0 rgba(204, 204,204, 0);
+    }
+  }
 
