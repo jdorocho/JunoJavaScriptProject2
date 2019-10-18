@@ -29,7 +29,6 @@ h1, h2, h3, h4 {
 }
 
 header {
-    
     background-image: linear-gradient(to top right, rgba(31, 16, 18, 0.3), rgb(255,192,203, 0.3)), url("./assets/saso-tusar-I1xrGOqw-zA-unsplash.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -37,8 +36,6 @@ header {
 }
 
 .navAndFeeling {
-    /* border: 2px solid blue; */
-    /* padding: 200px 0px 350px 0px; */
     padding: 265px 0px;
     display: flex;
     flex-direction: column; 
@@ -48,7 +45,6 @@ header {
 
 nav {
     position: fixed; 
-    /* border: 2px dotted pink;  */
     top: 0;
     width: 100%;
     padding: 20px; 
@@ -61,7 +57,6 @@ nav ul {
     display: flex;
     justify-content: space-between; 
     list-style: none;
-    /* border: 2px dotted pink; */
     padding: 0px;
     width: 250px;
 }
@@ -81,7 +76,6 @@ nav a:hover {
 }
 
 .navbar-fixed-top.scrolled {
-    /* background-image: linear-gradient(45deg, rgba(119, 119, 119, 0.4), rgba(170, 170, 170, 0.4)) !important; */
     background-image: radial-gradient(rgba(119, 119, 119, 0.3) 5%, rgba(170, 170, 170, 0.3) 95%) !important;
     z-index: 3; 
     transition: all 200ms ease;
@@ -139,7 +133,6 @@ h2 {
 }
 
 main {
-    /* border: 2px dotted red; */
     padding: 200px 0px; 
 }
 
@@ -147,11 +140,9 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* border: 3px dashed pink; */
 }
 
 .need {
-    /* border: 1px solid blue;  */
     color: grey;
 }
 
@@ -195,7 +186,6 @@ main {
 }
 
 .needsCell:hover {
-    /* background-color: #aaa; */
     background-image: radial-gradient(#777 5%, #aaa 95%);
     color: #fff;
     cursor: pointer;
@@ -218,13 +208,20 @@ main {
     color: grey;
     font-family: 'Raleway', sans-serif;
     text-align: center;
-    /* box-shadow: 0px 0px 10px #aaa; */
 }
 
-.fillInContent {
+.results {
     display: flex;
     flex-wrap: wrap;
     margin-top: 25px;
+    justify-content: center;
+}
+
+.results img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    object-fit : cover;
 }
 
 .fillIn h3 {
@@ -238,7 +235,6 @@ main {
 }
 
 footer {
-    /* background-color: #999; */
     background-image: radial-gradient(#777 5%, #aaa 95%);
     padding: 100px 0px;
 }
@@ -252,7 +248,7 @@ footer p {
 
 @-webkit-keyframes pulse {
     0% {
-      -webkit-box-shadow: 0 0 0 0 rgba(170,170, 170, 0.4);
+        -webkit-box-shadow: 0 0 0 0 rgba(170,170, 170, 0.4);
     }
     70% {
         -webkit-box-shadow: 0 0 0 10px rgba(204, 204,204, 0);
@@ -260,11 +256,12 @@ footer p {
     100% {
         -webkit-box-shadow: 0 0 0 0 rgba(204, 204,204, 0);
     }
-  }
-  @keyframes pulse {
+}
+
+@keyframes pulse {
     0% {
-      -moz-box-shadow: 0 0 0 0 rgba(50, 50, 50, 0.4);
-      box-shadow: 0 0 0 0 rgba(50, 50, 50, 0.4);
+        -moz-box-shadow: 0 0 0 0 rgba(50, 50, 50, 0.4);
+        box-shadow: 0 0 0 0 rgba(50, 50, 50, 0.4);
     }
     70% {
         -moz-box-shadow: 0 0 0 10px rgba(170, 170, 170, 0);
@@ -274,5 +271,5 @@ footer p {
         -moz-box-shadow: 0 0 0 0 rgba(204, 204,204, 0);
         box-shadow: 0 0 0 0 rgba(204, 204,204, 0);
     }
-  }
+}
 
